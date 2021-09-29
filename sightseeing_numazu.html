@@ -43,6 +43,33 @@
                margin: auto;
                text-align: center;
           }
+
+          .iframe-wrap {
+               position: relative;
+               width: 100%;
+               padding-top: 56.25%;
+          }
+
+          .iframe-wrap iframe {
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 100%;
+               height: 100%;
+          }
+
+          .map {
+               position: relative;
+               width: 100%;
+          }
+
+          .map iframe {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100% !important;
+               height: 100% !important
+          }
      </style>
 </head>
 
@@ -80,9 +107,11 @@
           <a href="http://maps.apple.com/?q=ローソン+BiVi沼津店">マップアプリで開く</a>
           <br />
           <br />
-          <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.9098227383796!2d138.8605604769743!3d35.10404829455744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855dea401813%3A0xfc891f67f4ebe76!2z44Ot44O844K944OzIEJpVmnmsrzmtKXlupc!5e0!3m2!1sja!2sjp!4v1632760546668!5m2!1sja!2sjp"
-               width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="map" style="padding-top: 65%">
+               <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.9098227383796!2d138.8605604769743!3d35.10404829455744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855dea401813%3A0xfc891f67f4ebe76!2z44Ot44O844K944OzIEJpVmnmsrzmtKXlupc!5e0!3m2!1sja!2sjp!4v1632760546668!5m2!1sja!2sjp"
+                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
           <br />
           <br />
           <h5>セブンイレブン 沼津駅北口店</h5>
@@ -162,7 +191,9 @@
           <a href="http://maps.apple.com/?q=モスバーガー+沼津五月町店">マップアプリで開く</a>
           <br />
           <br />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6576665058105!2d138.85975301524326!3d35.11525818033026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198540502dc273%3A0xf8482025148c2bf!2z44Oi44K544OQ44O844Ks44O8IOayvOa0peS6lOaciOeUuuW6lw!5e0!3m2!1sja!2sjp!4v1632920887978!5m2!1sja!2sjp" width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6576665058105!2d138.85975301524326!3d35.11525818033026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198540502dc273%3A0xf8482025148c2bf!2z44Oi44K544OQ44O844Ks44O8IOayvOa0peS6lOaciOeUuuW6lw!5e0!3m2!1sja!2sjp!4v1632920887978!5m2!1sja!2sjp"
+               width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <br />
           <br />
           <h5>ドミノ・ピザ 沼津リコー通り店</h5>
@@ -173,7 +204,9 @@
           <a href="http://maps.apple.com/?q=ドミノ・ピザ沼津リコー通り店">マップアプリで開く</a>
           <br />
           <br />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.9690031392696!2d138.85912795678996!3d35.10980678207382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198569dcb1cbd1%3A0x861acb21043122d2!2z44OJ44Of44OO44O744OU44K25rK85rSl44Oq44Kz44O86YCa44KK5bqX!5e0!3m2!1sja!2sjp!4v1632921257569!5m2!1sja!2sjp" width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.9690031392696!2d138.85912795678996!3d35.10980678207382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198569dcb1cbd1%3A0x861acb21043122d2!2z44OJ44Of44OO44O744OU44K25rK85rSl44Oq44Kz44O86YCa44KK5bqX!5e0!3m2!1sja!2sjp!4v1632921257569!5m2!1sja!2sjp"
+               width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <br />
           <br />
           <p>※上記のほかにロッテリアがありましたがイシバシプラザとともに閉店しました...</p>
@@ -188,7 +221,9 @@
           <a href="http://maps.apple.com/?q=ジョナサン+沼津杉崎店">マップアプリで開く</a>
           <br />
           <br />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.98375834011!2d138.86566182923156!3d35.10833309588317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855b14cbb903%3A0x9eb194418eb9748a!2z44K444On44OK44K144OzIOayvOa0peadieW0juW6lw!5e0!3m2!1sja!2sjp!4v1632919658134!5m2!1sja!2sjp" width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.98375834011!2d138.86566182923156!3d35.10833309588317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855b14cbb903%3A0x9eb194418eb9748a!2z44K444On44OK44K144OzIOayvOa0peadieW0juW6lw!5e0!3m2!1sja!2sjp!4v1632919658134!5m2!1sja!2sjp"
+               width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <br />
           <br />
           <hr />
