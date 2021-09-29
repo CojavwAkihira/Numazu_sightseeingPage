@@ -327,7 +327,7 @@
                     var href = $(this).attr("href");
                     var target = $(href == "#" || href == "" ? 'html,body' : href);
                     var position = target.offset().top;
-                    $('body,html').animate({
+                    $('html,body').animate({
                          scrollTop: position
                     }, 350);
                     return false;
