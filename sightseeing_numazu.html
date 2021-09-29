@@ -76,10 +76,10 @@
           <hr />
           <h2 id="north">沼津駅&nbsp;北口方面の店舗情報</h2>
           <ul>
-               <li><a href="#northConvStore">コンビニ</a></li>
-               <li><a href="#northFastFood">ファストフード</a></li>
-               <li><a href="#northRestaurant">レストラン</a></li>
-               <li><a href="#northGrillMeat">焼肉</a></li>
+               <li><a href="#northConvStore" class="scrollOption">コンビニ</a></li>
+               <li><a href="#northFastFood" class="scrollOption">ファストフード</a></li>
+               <li><a href="#northRestaurant" class="scrollOption">レストラン</a></li>
+               <li><a href="#northGrillMeat" class="scrollOption">焼肉</a></li>
           </ul>
           <h5>
                <a href="#south">南口方面の店舗情報はこちら</a>
@@ -298,7 +298,7 @@
 
      </div>
 
-     <div id="pageTop"><a href="#"></a></div>
+     <div id="pageTop" class="scrollOption"><a href="#"></a></div>
 
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -307,8 +307,13 @@
           crossorigin="anonymous"></script>
      <script>
           jQuery(function () {
+
+               // variable
                var pagetop = $('#pageTop');
+               var scrollOption = $('.scrollOption');
                pagetop.hide();
+
+               // button
                $(window).scroll(function () {
                     if ($(this).scrollTop() > 150) {
                          pagetop.fadeIn();
@@ -316,10 +321,15 @@
                          pagetop.fadeOut();
                     }
                });
-               pagetop.click(function () {
+
+               // scroll
+               scrollOption.click(function () {
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html,body' : href);
+                    var position = target.offset().top;
                     $('body,html').animate({
-                         scrollTop: 0
-                    }, 150);
+                         scrollTop: position
+                    }, 350);
                     return false;
                });
           });
