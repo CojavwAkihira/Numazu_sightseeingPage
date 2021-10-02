@@ -1,283 +1,274 @@
 <!DOCTYPE html>
 
 <head>
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>周辺案内</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-     <style>
-          #pageTop {
-               width: 50px;
-               height: 50px;
-               position: fixed;
-               right: 0;
-               bottom: 0;
-               background: #ef3f98;
-               opacity: 0.6;
-               border-radius: 50%;
-          }
-
-          #pageTop a {
-               position: relative;
-               display: block;
-               width: 50px;
-               height: 50px;
-               text-decoration: none;
-          }
-
-          #pageTop a::before {
-               font-family: 'Font Awesome 5 Free';
-               font-weight: 900;
-               content: '\f106';
-               font-size: 25px;
-               color: #fff;
-               position: absolute;
-               width: 25px;
-               height: 25px;
-               top: -15px;
-               bottom: 0;
-               right: 0;
-               left: 0;
-               margin: auto;
-               text-align: center;
-          }
-
-          .map {
-               position: relative;
-               width: 100%;
-               padding-top: 65%;
-          }
-
-          .map iframe {
-               position: absolute;
-               top: 0;
-               left: 0;
-               width: 100% !important;
-               height: 100% !important;
-          }
-     </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>周辺案内</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style>
+        #pageTop {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background: #ef3f98;
+            opacity: 0.6;
+            border-radius: 50%;
+        }
+        
+        #pageTop a {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+        }
+        
+        #pageTop a::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f106';
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: -15px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .map {
+            position: relative;
+            width: 100%;
+            padding-top: 65%;
+        }
+        
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
 </head>
 
 <body>
-     <div class="container">
-          <br />
-          <h6 style="color:red">
-               ★★★<br />
-               緊急事態宣言について、<br />
-               2021年10月～解除となります。<br /><br />
-               コロナ終息はしていませんので<br />
-               皆様、これまでと同様に<br />
-               マスク・消毒等の対策を<br />
-               お願いいたします。<br />
-               ★★★<br />
-          </h6>
-          <hr />
-          <h2 id="other">沼津の観光地情報</h2>
-          <ul>
-               <li><a href="#touristSpot" class="scrollOption">観光地</a></li>
-               <li><a href="#shoppingMall" class="scrollOption">ショッピングモール</a></li>
-               <li><a href="#secondHandShop" class="scrollOption">中古ショップ</a></li>
-          </ul>
-          <h5>
-               <a href="./index.html">北口方面の店舗情報はこちら</a>
-          </h5>
-          <h5>
-               <a href="./sightseeing_numazu_south.html">南口方面の店舗情報はこちら</a>
-          </h5>
-          <hr />
-          <h3 id="touristSpot">観光地</h3>
-          <hr />
-          <h5>沼津港</h5>
-          <p>
-               港周辺にいろんな魚介系のお店があります。<br />
-               水族館は激混みなので要注意。<br />
-               人もたくさんいます。<br />
-               地図で表示したあたりに駐車場があります。<br />
-               11~13時でよく満車になっているイメージ。<br />
-               沼津駅南口から沼津港行きのバスが出ています。
-          </p>
-          <a href="http://maps.apple.com/?q=沼津魚市場">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.482860046355!2d138.85664615501366!3d35.08258925481949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198f94473ca037%3A0xf81bc72809ae5cc!2z5rK85rSl6a2a5biC5aC0!5e0!3m2!1sja!2sjp!4v1633003714149!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>千本浜海岸</h5>
-          <p>
-               海が近いのでせっかくなら浜辺で遊びたい人向け。<br />
-               撮影は...どうでしょう？夜間ならワンチャンありそう。<br />
+    <div class="container">
+        <br />
+        <h6 style="color:red">
+            ★★★<br /> 緊急事態宣言について、
+            <br /> 2021年10月～解除となります。
+            <br /><br /> コロナ終息はしていませんので
+            <br /> 皆様、これまでと同様に
+            <br /> マスク・消毒等の対策を
+            <br /> お願いいたします。
+            <br /> ★★★
+            <br />
+        </h6>
+        <hr />
+        <h2 id="other">沼津の観光地情報</h2>
+        <ul>
+            <li><a href="#touristSpot" class="scrollOption">観光地</a></li>
+            <li><a href="#shoppingMall" class="scrollOption">ショッピングモール</a></li>
+            <li><a href="#secondHandShop" class="scrollOption">中古ショップ</a></li>
+        </ul>
+        <h5>
+            <a href="./index.html">北口方面の店舗情報はこちら</a>
+        </h5>
+        <h5>
+            <a href="./sightseeing_numazu_south.html">南口方面の店舗情報はこちら</a>
+        </h5>
+        <hr />
+        <h3 id="touristSpot">観光地</h3>
+        <hr />
+        <h5>沼津港</h5>
+        <p>
+            港周辺にいろんな魚介系のお店があります。<br /> 水族館は激混みなので要注意。
+            <br /> 人もたくさんいます。
+            <br /> 地図で表示したあたりに駐車場があります。
+            <br /> 11~13時でよく満車になっているイメージ。
+            <br /> 沼津駅南口から沼津港行きのバスが出ています。
+        </p>
+        <p>
+            <a href="http://numazuminato.com/shopdata/category/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6" target="_blank" rel="noopener noreferrer">お店一覧を開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=沼津魚市場">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.482860046355!2d138.85664615501366!3d35.08258925481949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198f94473ca037%3A0xf81bc72809ae5cc!2z5rK85rSl6a2a5biC5aC0!5e0!3m2!1sja!2sjp!4v1633003714149!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>千本浜海岸</h5>
+        <p>
+            海が近いのでせっかくなら浜辺で遊びたい人向け。<br /> 撮影は...どうでしょう？夜間ならワンチャンあるかも？ <br /> (おすすめはしませんが...(そもそも時季外れなので入れるかどうか、ってところです))
+        </p>
+        <a href="http://maps.apple.com/?q=千本浜海水浴場">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5490.301839981014!2d138.84324844945752!3d35.09289637822226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44cf118361da468b!2z5Y2D5pys5rWc5YWs5ZySIOeEoeaWmemnkOi7iuWgtA!5e0!3m2!1sja!2sjp!4v1633003964048!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>三津・内浦</h5>
+        <p>
+            沼津駅からかなーーーり遠いですがバスが出ています。(三津行き)<br /> ラブライブの聖地巡礼民でめちゃくちゃ混んでる。
+            <br /> 水族館もあるのでちょっとした観光/時間つぶしになります。
+            <br /> 地図で示したかき氷屋さんは新雪を食べているかのような柔らかさでした。
+        </p>
+        <a href="http://maps.apple.com/?q=かき氷+えびな">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.20880808210342!2d138.8983015777248!3d35.023199973540954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601992153e767be7%3A0x1c3400f600443334!2z44GL44GN5rC3IOOBiOOBs-OBqg!5e0!3m2!1sja!2sjp!4v1633004318759!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>さわやか 沼津学園通り店</h5>
+        <p>
+            北口方面の店舗情報にも載せていますが、さわやか目当てで静岡にお越しになられる方も多いと思ったのでこちらにも。<br /> 他店と比べてあまり混んでない印象です。
+        </p>
+        <p>
+            <a href="https://www.genkotsu-hb.com/menu/" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=さわやか+沼津学園通り店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26108.381336628685!2d138.85702442045525!3d35.11800423267388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985470c9e6c31%3A0xe2fb66090f579a13!2z44GV44KP44KE44GLIOayvOa0peWtpuWckumAmuOCiuW6lw!5e0!3m2!1sja!2sjp!4v1633004492545!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <h3 id="shoppingMall">ショッピングモール</h3>
+        <hr />
+        <h5>ららぽーと沼津</h5>
+        <p>
+            沼津にららぽーとができてたみたいですよ？<br /> 買い物目的ならまぁ...行ってもいいかな...って感じです。
+            <br /> 休日は混んでます。
+            <br /> 沼津駅南口(8, 9番乗り場)からバスが出てます。
+        </p>
+        <p>
+            <a href="https://mitsui-shopping-park.com/lalaport/numazu/floor/" target="_blank" rel="noopener noreferrer">フロアガイドを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=ららぽーと沼津">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.615120827456!2d138.83886711934147!3d35.11784936227831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019853694d0d8f5%3A0x68cd807e1a8c33bd!2z44KJ44KJ44G944O844Go5rK85rSl!5e0!3m2!1sja!2sjp!4v1633004684004!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>BiVi沼津</h5>
+        <p>
+            会場から一番近いショッピングモール。<br /> 地元民は大体ゲーセンと映画館に用がある。(？？)
+        </p>
+        <p>
+            <a href="https://www.e-bivi.com/numazu/shop/floor.jsp" target="_blank" rel="noopener noreferrer">フロアガイドを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=BiVi沼津">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5181.308716550156!2d138.86077904574879!3d35.10621698908348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83225dc98a7a81f!2zQmlWaeayvOa0pQ!5e0!3m2!1sja!2sjp!4v1633004986178!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>ドン・キホーテ 沼津店</h5>
+        <p>
+            どっどっどっ、どんっき～♪🔨<br /> 国道1号を富士方面に進むとMEGAドンキがあるみたいです。
+        </p>
+        <a href="http://maps.apple.com/?q=ドン・キホーテ+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.857004586608!2d138.87056380303537!3d35.09992163046026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198ff824d2fe57%3A0xbfcde840c0c1c8cf!2z44OJ44Oz44O744Kt44Ob44O844OGIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005268397!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <h3 id="secondHandShop">中古ショップ</h3>
+        <hr />
+        <h5>ハードオフ 沼津店</h5>
+        <p>
+            オフハウスが併設されています。<br /> すぐ近くには業務スーパーもあるので割と便利かも？
+        </p>
+        <a href="http://maps.apple.com/?q=ハードオフ+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4890.301789147299!2d138.867142402817!3d35.10958971413458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855068155ba1%3A0x9c2cc1bf0a3a04cf!2z44OP44O844OJ44Kq44OVIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005401382!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>お宝中古市場 沼津店</h5>
+        <p>
+            規模が大きそうなので何か掘り出し物があるかも？<br /> 片浜海岸が近いのでお散歩/ジョギング後にぷらっと見るのもあり。
+        </p>
+        <a href="http://maps.apple.com/?q=お宝中古市場+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6527.328494772072!2d138.81552649506844!3d35.11509388770896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf02a2d3c71c2458c!2z44GK5a6d5Lit5Y-k5biC5aC0IOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005513321!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
 
-          </p>
-          <a href="http://maps.apple.com/?q=千本浜海水浴場">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5490.301839981014!2d138.84324844945752!3d35.09289637822226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44cf118361da468b!2z5Y2D5pys5rWc5YWs5ZySIOeEoeaWmemnkOi7iuWgtA!5e0!3m2!1sja!2sjp!4v1633003964048!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>三津・内浦</h5>
-          <p>
-               沼津駅からかなーーーり遠いですがバスが出ています。(三津行き)<br />
-               ラブライブの聖地巡礼民でめちゃくちゃ混んでる。<br />
-               水族館もあるのでちょっとした観光/時間つぶしにはなります。<br />
-               地図で示したかき氷屋さんは新雪を食べているかのような柔らかさでした。
-          </p>
-          <a href="http://maps.apple.com/?q=かき氷+えびな">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.20880808210342!2d138.8983015777248!3d35.023199973540954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601992153e767be7%3A0x1c3400f600443334!2z44GL44GN5rC3IOOBiOOBs-OBqg!5e0!3m2!1sja!2sjp!4v1633004318759!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>さわやか 沼津学園通り店</h5>
-          <p>
-               北口方面の店舗情報にも載せていますが、さわやか目当てで静岡にお越しになられる方も多いと思ったのでこちらにも。<br />
-               他店と比べてあまり混んでない印象です。
-          </p>
-          <a href="http://maps.apple.com/?q=さわやか+沼津学園通り店">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26108.381336628685!2d138.85702442045525!3d35.11800423267388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985470c9e6c31%3A0xe2fb66090f579a13!2z44GV44KP44KE44GLIOayvOa0peWtpuWckumAmuOCiuW6lw!5e0!3m2!1sja!2sjp!4v1633004492545!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <hr />
-          <h3 id="shoppingMall">ショッピングモール</h3>
-          <hr />
-          <h5>ららぽーと沼津</h5>
-          <p>
-               沼津にららぽーとができてたみたいですよ？<br />
-               買い物目的ならまぁ...行ってもいいかな...って感じです。<br />
-               休日は混んでます。<br />
-               沼津駅南口(8, 9番乗り場)からバスが出てます。
-          </p>
-          <a href="http://maps.apple.com/?q=ららぽーと沼津">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.615120827456!2d138.83886711934147!3d35.11784936227831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019853694d0d8f5%3A0x68cd807e1a8c33bd!2z44KJ44KJ44G944O844Go5rK85rSl!5e0!3m2!1sja!2sjp!4v1633004684004!5m2!1sja!2sjp"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>BiVi沼津</h5>
-          <p>
-               会場から一番近いショッピングモール。<br />
-               地元民は大体ゲーセンと映画館に用がある。(？？)
-          </p>
-          <a href="http://maps.apple.com/?q=BiVi沼津">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5181.308716550156!2d138.86077904574879!3d35.10621698908348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83225dc98a7a81f!2zQmlWaeayvOa0pQ!5e0!3m2!1sja!2sjp!4v1633004986178!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>ドン・キホーテ 沼津店</h5>
-          <p>
-               どっどっどっ、どんっき～♪🔨<br />
-               国道1号を富士方面に進むとMEGAドンキがあるみたいです。
-          </p>
-          <a href="http://maps.apple.com/?q=ドン・キホーテ+沼津店">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.857004586608!2d138.87056380303537!3d35.09992163046026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198ff824d2fe57%3A0xbfcde840c0c1c8cf!2z44OJ44Oz44O744Kt44Ob44O844OGIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005268397!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <hr />
-          <h3 id="secondHandShop">中古ショップ</h3>
-          <hr />
-          <h5>ハードオフ 沼津店</h5>
-          <p>
-               オフハウスが併設されています。<br />
-               すぐ近くには業務スーパーもあるので割と便利かも？
-          </p>
-          <a href="http://maps.apple.com/?q=ハードオフ+沼津店">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4890.301789147299!2d138.867142402817!3d35.10958971413458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855068155ba1%3A0x9c2cc1bf0a3a04cf!2z44OP44O844OJ44Kq44OVIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005401382!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
-          <h5>お宝中古市場 沼津店</h5>
-          <p>
-               規模が大きそうなので何か掘り出し物があるかも？<br />
-               片浜海岸が近いのでお散歩/ジョギング後にぷらっと見るのもあり。
-          </p>
-          <a href="http://maps.apple.com/?q=お宝中古市場+沼津店">マップアプリで開く</a>
-          <br />
-          <br />
-          <div class="map">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6527.328494772072!2d138.81552649506844!3d35.11509388770896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf02a2d3c71c2458c!2z44GK5a6d5Lit5Y-k5biC5aC0IOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633005513321!5m2!1sja!2sjp"
-                    width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <br />
-          <br />
+    </div>
 
-     </div>
+    <div id="pageTop">
+        <a href="#" class="scrollOption"></a>
+    </div>
 
-     <div id="pageTop"><a href="#" class="scrollOption"></a></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        jQuery(function() {
 
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-          crossorigin="anonymous"></script>
-     <script>
-          jQuery(function () {
+            // variable
+            var pagetop = $('#pageTop');
+            var scrollOption = $('.scrollOption');
+            pagetop.hide();
 
-               // variable
-               var pagetop = $('#pageTop');
-               var scrollOption = $('.scrollOption');
-               pagetop.hide();
+            // button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 150) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
 
-               // button
-               $(window).scroll(function () {
-                    if ($(this).scrollTop() > 150) {
-                         pagetop.fadeIn();
-                    } else {
-                         pagetop.fadeOut();
-                    }
-               });
-
-               // scroll
-               scrollOption.click(function () {
-                    var href = $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'body,html' : href);
-                    var position = target.offset().top;
-                    $('html,body').animate({
-                         scrollTop: position
-                    }, 350);
-                    return false;
-               });
-          });
-     </script>
+            // scroll
+            scrollOption.click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'body,html' : href);
+                var position = target.offset().top;
+                $('html,body').animate({
+                    scrollTop: position
+                }, 350);
+                return false;
+            });
+        });
+    </script>
 
 </body>
 
