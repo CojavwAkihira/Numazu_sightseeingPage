@@ -396,62 +396,60 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        jQuery(function() {
 
-</body>
-<script>
-    jQuery(function() {
+            const darkmode = new Darkmode();
 
-        const darkmode = new Darkmode();
+            // variable
+            var pagetop = $('#pageTop');
+            var scrollOption = $('.scrollOption');
+            var toggleButton = $('#modeToggleButton');
 
-        // variable
-        var pagetop = $('#pageTop');
-        var scrollOption = $('.scrollOption');
-        var toggleButton = $('#modeToggleButton');
+            pagetop.hide();
 
-        pagetop.hide();
+            // button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 150) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
 
-        // button
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 150) {
-                pagetop.fadeIn();
-            } else {
-                pagetop.fadeOut();
-            }
+            // scroll
+            scrollOption.click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'body,html' : href);
+                var position = target.offset().top;
+                $('html,body').animate({
+                    scrollTop: position
+                }, 350);
+                return false;
+            });
+
+            toggleButton.click(function() {
+                var innerToggleButton = document.getElementById('modeToggleButton');
+                var hrElems = document.getElementsByTagName("hr");
+                darkmode.toggle();
+
+                if (darkmode.isActivated()) {
+                    innerToggleButton.innerText = "ライトモードに変更する";
+                    innerToggleButton.className = "btn btn-light";
+                    Array.prototype.forEach.call(hrElems, function(element) {
+                        element.style.color = "#ffffff"
+                    });
+                } else {
+                    innerToggleButton.innerText = "ダークモードに変更する";
+                    innerToggleButton.className = "btn btn-dark";
+                    Array.prototype.forEach.call(hrElems, function(element) {
+                        element.style.color = "#404040"
+                    });
+                }
+            })
+
         });
-
-        // scroll
-        scrollOption.click(function() {
-            var href = $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'body,html' : href);
-            var position = target.offset().top;
-            $('html,body').animate({
-                scrollTop: position
-            }, 350);
-            return false;
-        });
-
-        toggleButton.click(function() {
-            var innerToggleButton = document.getElementById('modeToggleButton');
-            var hrElems = document.getElementsByTagName("hr");
-            darkmode.toggle();
-
-            if (darkmode.isActivated()) {
-                innerToggleButton.innerText = "ライトモードに変更する";
-                innerToggleButton.className = "btn btn-light";
-                Array.prototype.forEach.call(hrElems, function(element) {
-                    element.style.color = "#ffffff"
-                });
-            } else {
-                innerToggleButton.innerText = "ダークモードに変更する";
-                innerToggleButton.className = "btn btn-dark";
-                Array.prototype.forEach.call(hrElems, function(element) {
-                    element.style.color = "#404040"
-                });
-            }
-        })
-
-    });
-</script>
+    </script>
 
 </body>
 

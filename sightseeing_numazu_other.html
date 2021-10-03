@@ -56,11 +56,19 @@
             width: 100% !important;
             height: 100% !important;
         }
+        
+        #modeToggleButton {
+            position: relative;
+            top: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="text-end">
+            <button id="modeToggleButton" class="btn btn-dark" type="button">ダークモードに変更する</button>
+        </div>
         <br />
         <h6 style="color:red">
             ★★★<br /> 緊急事態宣言について、
@@ -72,7 +80,7 @@
             <br /> ★★★
             <br />
         </h6>
-        <hr />
+        <hr style="color: #404040">
         <h2 id="other">沼津の観光地情報</h2>
         <ul>
             <li><a href="#touristSpot" class="scrollOption">観光地</a></li>
@@ -85,9 +93,9 @@
         <h5>
             <a href="./sightseeing_numazu_south.html">南口方面の店舗情報はこちら</a>
         </h5>
-        <hr />
+        <hr style="color: #404040">
         <h3 id="touristSpot">観光地</h3>
-        <hr />
+        <hr style="color: #404040">
         <h5>沼津港</h5>
         <p>
             港周辺にいろんな魚介系のお店があります。<br /> 水族館は激混みなので要注意。
@@ -152,9 +160,9 @@
         </div>
         <br />
         <br />
-        <hr />
+        <hr style="color: #404040">
         <h3 id="shoppingMall">ショッピングモール</h3>
-        <hr />
+        <hr style="color: #404040">
         <h5>ららぽーと沼津</h5>
         <p>
             沼津にららぽーとができてたみたいですよ？<br /> 買い物目的ならまぁ...行ってもいいかな...って感じです。
@@ -202,9 +210,9 @@
         </div>
         <br />
         <br />
-        <hr />
+        <hr style="color: #404040">
         <h3 id="secondHandShop">中古ショップ</h3>
-        <hr />
+        <hr style="color: #404040">
         <h5>ハードオフ 沼津店</h5>
         <p>
             オフハウスが併設されています。<br /> すぐ近くには業務スーパーもあるので割と便利かも？
@@ -240,12 +248,17 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
         jQuery(function() {
+
+            const darkmode = new Darkmode();
 
             // variable
             var pagetop = $('#pageTop');
             var scrollOption = $('.scrollOption');
+            var toggleButton = $('#modeToggleButton');
+
             pagetop.hide();
 
             // button
@@ -267,6 +280,27 @@
                 }, 350);
                 return false;
             });
+
+            toggleButton.click(function() {
+                var innerToggleButton = document.getElementById('modeToggleButton');
+                var hrElems = document.getElementsByTagName("hr");
+                darkmode.toggle();
+
+                if (darkmode.isActivated()) {
+                    innerToggleButton.innerText = "ライトモードに変更する";
+                    innerToggleButton.className = "btn btn-light";
+                    Array.prototype.forEach.call(hrElems, function(element) {
+                        element.style.color = "#ffffff"
+                    });
+                } else {
+                    innerToggleButton.innerText = "ダークモードに変更する";
+                    innerToggleButton.className = "btn btn-dark";
+                    Array.prototype.forEach.call(hrElems, function(element) {
+                        element.style.color = "#404040"
+                    });
+                }
+            })
+
         });
     </script>
 
