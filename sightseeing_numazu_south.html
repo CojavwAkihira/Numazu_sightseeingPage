@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>周辺案内</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style>
+        #pageTop {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background: #ef3f98;
+            opacity: 0.6;
+            border-radius: 50%;
+        }
+
+        #pageTop a {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        #pageTop a::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f106';
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: -15px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        .map {
+            position: relative;
+            width: 100%;
+            padding-top: 65%;
+        }
+
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #modeToggleButton {
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-end">
+            <button id="modeToggleButton" class="btn btn-dark" type="button">ダークモードに変更する</button>
+        </div>
+        <br />
+        <h6 style="color:red" class="darkmode-ignore">
+            ★★★<br /> 緊急事態宣言について、
+            <br /> 2021年10月～解除となります。
+            <br /><br /> コロナ終息はしていませんので
+            <br /> 皆様、これまでと同様に
+            <br /> マスク・消毒等の対策を
+            <br /> お願いいたします。
+            <br /> ★★★
+            <br />
+        </h6>
+        <hr style="color: #404040">
+        <h2 id="south">沼津駅&nbsp;南口方面の店舗情報</h2>
+        <ul>
+            <li><a href="#southConvStore" class="scrollOption">コンビニ</a></li>
+            <li><a href="#southFastFood" class="scrollOption">ファストフード</a></li>
+            <li><a href="#southRestaurant" class="scrollOption">ファミレス系</a></li>
+            <li><a href="#southGrillMeat" class="scrollOption">焼肉</a></li>
+            <li><a href="#southNoodle" class="scrollOption">ラーメン</a></li>
+            <li><a href="#southCoffee" class="scrollOption">喫茶店</a></li>
+            <li><a href="#southKaraoke" class="scrollOption">カラオケ</a></li>
+            <li><a href="#northOther" class="scrollOption">その他(手芸,大きい服,スーパーetc)</a></li>
+        </ul>
+        <h5>
+            <a href="./index.html">北口方面の店舗情報はこちら</a>
+        </h5>
+        <h5>
+            <a href="./sightseeing_numazu_other.html">観光地情報はこちら</a>
+        </h5>
+        <hr style="color: #404040">
+        <h3 id="southConvStore">コンビニ</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩5分</h4>
+        <hr style="color: #404040">
+        <h5>ベルマートキヨスク 沼津店(南口)</h5>
+        <p>
+            南口を出て右側すぐにあるコンビニ。<br /> 周囲と比べると小さめ。
+        </p>
+        <a href="http://maps.apple.com/?q=ベルマートキヨスク+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.01024480708176!2d138.85949559509757!3d35.10261760888538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985674f76944d%3A0x60124a5e3268359a!2z44OZ44Or44Oe44O844OI44Kt44Oo44K544KvIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633000803164!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>ファミリーマート 沼津アントレ店</h5>
+        <p>
+            南口を出て右側にあるコンビニ。<br /> 駅前にしては大きめ。
+        </p>
+        <a href="http://maps.apple.com/?q=ファミリーマート+沼津アントレ店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.040979228327!2d138.8593252985769!3d35.10261760888538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985674e1623d7%3A0x2f0ebe9e1dfe5824!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOayvOa0peOCouODs-ODiOODrOW6lw!5e0!3m2!1sja!2sjp!4v1633000584545!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>ローソン 沼津駅南口店</h5>
+        <p>
+            南口を出て左側にあるコンビニ。<br /> 駅前規模(小さめ)
+        </p>
+        <a href="http://maps.apple.com/?q=ローソン+沼津駅南口店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.02145344007624!2d138.86010313916867!3d35.10242505198141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e0f990c09%3A0x84fb158c6604f0e2!2z44Ot44O844K944OzIOayvOa0pemnheWNl-WPo-W6lw!5e0!3m2!1sja!2sjp!4v1633000663990!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>セブンイレブン 沼津駅前店</h5>
+        <p>
+            ローソン 沼津駅南口店を通り過ぎた先にある路地に入るとあります。<br /> 駅前...？
+        </p>
+        <a href="http://maps.apple.com/?q=セブンイレブン+沼津駅前店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.0486063353989!2d138.8610263103815!3d35.101855716884906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e41ff3a15%3A0x3559f835660b1f21!2z44K744OW44Oz44Kk44Os44OW44OzIOayvOa0pemnheWJjeW6lw!5e0!3m2!1sja!2sjp!4v1633001009948!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>～徒歩10分</h4>
+        <hr style="color: #404040">
+        <h5>ファミリーマート 沼津大手町店</h5>
+        <p>
+            南口左側の駅ビル方面に進む途中に地下通路へつながる階段があります。<br /> 右側の壁伝いに進めばコンビニ方面に進めます。
+        </p>
+        <a href="http://maps.apple.com/?q=ファミリーマート+沼津大手町店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305.6752362728866!2d138.85903144382792!3d35.101218338431615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198560bdf78b7d%3A0x78663225544fd59f!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOayvOa0peWkp-aJi-eUuuW6lw!5e0!3m2!1sja!2sjp!4v1633001127487!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>デイリーヤマザキ 沼津大手町3丁目店</h5>
+        <p>
+            ローソン 沼津駅南口店を左手にまっすぐ進むと十字交差点があります。<br /> 交差点を渡ってまっすぐ進めば到着です。
+        </p>
+        <a href="http://maps.apple.com/?q=デイリーヤマザキ+沼津大手町3丁目店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.0308576067284!2d138.85903157293797!3d35.10362866231767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198567609910bb%3A0xecbce5f30a92f163!2z44Kt44Oo44K544KvIOayvOa0peWMl-WPo--8iDLlj7fvvIk!5e0!3m2!1sja!2sjp!4v1632761463420!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>～徒歩15分</h4>
+        <hr style="color: #404040">
+        <h5>セブンイレブン 沼津大手町4丁目店</h5>
+        <p>
+            仲見世商店街を抜けた信号のある交差点を渡って右にあります。<br />
+            駐車場有ります。
+        </p>
+        <a href="http://maps.apple.com/?q=ファミリーマート+沼津大手町4丁目店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.037467296486!2d138.85764087154934!3d35.09922560648142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985604fb69a67%3A0xca2f608471952fe9!2z44K744OW44Oz44Kk44Os44OW44OzIOayvOa0peWkp-aJi-eUuu-8lOS4geebruW6lw!5e0!3m2!1sja!2sjp!4v1633539676585!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southFastFood">ファストフード</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩15分</h4>
+        <hr style="color: #404040">
+        <h5>すき家 414号沼津三枚橋店</h5>
+        <p>
+            牛丼はファストフード！！！！！（？）<br />
+            車で移動したほうがいいです。
+        </p>
+        <p>
+            <a href="https://www.sukiya.jp/menu/in/gyudon/" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=すき家+沼津三枚橋店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.210945098894!2d138.86101980041!3d35.099133515915675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855f70001c7f%3A0x706605686ba0d82!2z44GZ44GN5a62IDQxNOWPt-ayvOa0peS4ieaemuapi-W6lw!5e0!3m2!1sja!2sjp!4v1633190612805!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>徒歩30分～ (車推奨)</h4>
+        <hr style="color: #404040">
+        <h5>かつや 沼津香貫店</h5>
+        <p>
+            かつ丼おいしいですよね。<br />
+            でもここまで歩くともう沼津港が近いんですよね...。<br />
+        </p>
+        <p>
+            <a href="https://www.arclandservice.co.jp/katsuya/menu/" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=かつや+沼津香貫店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1295.6240858441242!2d138.86631361778623!3d35.087530628197726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198feed0d29d7f%3A0x8357712cc3bd66f3!2z44GL44Gk44KEIOayvOa0pemmmeiyq-W6lw!5e0!3m2!1sja!2sjp!4v1633540018355!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>吉野家 414号線沼津南店</h5>
+        <p>
+            ポケ盛、スタミナ、並盛。<br />
+            食うのは人の勝手。<br />
+            本当に食べたいものなら<br />
+            食べたい牛丼を<br />
+            完食できるように　がんばるべき。（違うそうじゃない）<br />
+        </p>
+        <p>
+            <a href="https://www.yoshinoya.com/menu/" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=吉野家+沼津南店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.2788532898558!2d138.8666384053732!3d35.08656489144526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198fe8f7d18303%3A0xd4c0e31a9e1370d6!2z5ZCJ6YeO5a62IO-8lO-8ke-8lOWPt-e3muayvOa0peWNl-W6lw!5e0!3m2!1sja!2sjp!4v1633540249072!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>松屋 沼津南店</h5>
+        <p>
+            たまに松屋食べたくなりますよね。
+        </p>
+        <p>
+            <a href="https://www.matsuyafoods.co.jp/matsuya/menu/" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=松屋+沼津南店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.2895325534764!2d138.86665739435315!3d35.086228744581085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198fe85e0006f3%3A0xf77aa23cb7aa5d8b!2z5p2-5bGLIOayvOa0peWNl-W6lw!5e0!3m2!1sja!2sjp!4v1633540328145!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southRestaurant">ファミレス系</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩5分</h4>
+        <hr style="color: #404040">
+        <h5>サイゼリヤ 沼津駅前店</h5>
+        <p>
+            駅から近いファミレス。<br /> ローソンが入ってるビルにあります。
+        </p>
+        <p>
+            <a href="https://www.saizeriya.co.jp/menu/grandmenu.html" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=サイゼリヤ+沼津駅前店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0227297178189!2d138.8606741942538!3d35.102170070814324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e0e37a6f1%3A0xc40a64fa7af30c22!2z44K144Kk44K844Oq44OkIOayvOa0pemnheWJjeW6lw!5e0!3m2!1sja!2sjp!4v1633002091358!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>スパゲティ 夢の中へ</h5>
+        <p>
+            テレビでやってたサービスがいっぱいのお店。<br /> レストランというよりはスパゲッティ専門店...？
+        </p>
+        <a href="http://maps.apple.com/?q=夢の中へ">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.0995049556211!2d138.85672393255308!3d35.101741224426824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9768d411cdce3ff0!2z44K544OR44Ky44OG44Kj5aSi44Gu5Lit44G4!5e0!3m2!1sja!2sjp!4v1633002271465!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>パスタ屋一丁目 イーラde店</h5>
+        <p>
+            南口を出て左手にある駅ビルの2階にあります。
+        </p>
+        <p>
+            <a href="https://www.1cho-me.jp/pasta-ya/shop/numazu-erade/" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=パスタ屋一丁目+イーラde店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.99079124291916!2d138.85823508825115!3d35.10203383072857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019856736df2821%3A0xa33e1b2f38323da6!2z44OR44K544K_5bGL5LiA5LiB55uuIOOCpOODvOODqWRl5bqX!5e0!3m2!1sja!2sjp!4v1633190513647!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>うなぎ・釜めし とりう</h5>
+        <p>
+            駅を出て左側のビル付近にある地下通路を通った先にあります。<br />
+            から揚げ。。。
+        </p>
+        <p>
+            <a href="http://www.toriu.com/" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=とりう+沼津">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0272322277486!2d138.85878170840442!3d35.10127052390828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198560bc11b0a7%3A0x75cb0c65b4ccb1e1!2z44Go44KK44GG!5e0!3m2!1sja!2sjp!4v1633541825214!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>～徒歩10分</h4>
+        <hr style="color: #404040">
+        <h5>中華料理 八福</h5>
+        <p>
+            ちょっと複雑そうな交差点のところにあります。<br />
+            駅を出て左側にある駅ビルの横断歩道を渡って仲見世商店街方面→右折して直進です。
+        </p>
+        <a href="http://maps.apple.com/?q=中華料理+八福">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.02581656319205!2d138.85764597756207!3d35.1015533586919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198566d6457967%3A0x54278df8af2f1a87!2z5Lit6I-v5paZ55CGIOWFq-emjw!5e0!3m2!1sja!2sjp!4v1633542060667!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>やっぱりステーキ 沼津店</h5>
+        <p>
+            肉！！！！！！！🐹🐹🐹🐹🐹<br />
+            仲見世商店街を駅ビル方面から入って2つめの交差点右側にあります。
+        </p>
+        <p>
+            <a href="https://yapparigroup.jp/menu.html" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=やっぱりステーキ+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187.9013819910394!2d138.85692925906204!3d35.10064859727809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601985f65c294bc3%3A0x9f975b2af5165b6f!2z44KE44Gj44Gx44KK44K544OG44O844KtIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633542289503!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southGrillMeat">焼肉</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩15分</h4>
+        <hr style="color: #404040">
+        <h5>感激どんどん 沼津店</h5>
+        <p>
+            歩道橋を使うので割としんどい。<br />
+            駐車場は北口側の焼肉店と比べると小さめです。
+        </p>
+        <p>
+            <a href="http://www.don2.jp/menu.html" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=感激どんどん+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.2988974322634!2d138.86139153785558!3d35.09924660896994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855f7edc53d7%3A0xee94b36a8ea72f5d!2z54S86IKJ6aOf44G55pS-6aGMIOaEn-a_gOOBqeOCk-OBqeOCkyDmsrzmtKXlupc!5e0!3m2!1sja!2sjp!4v1633002654251!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southNoodle">ラーメン</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩5分</h4>
+        <hr style="color: #404040">
+        <h5>魂心家 沼津店</h5>
+        <p>
+            安定の家系。<br />
+            初心者は味薄め/油少なめがベター。
+        </p>
+        <p>
+            <a href="http://www.konshinya.com/menu.html" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=魂心家+沼津">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1412.6444617018185!2d138.8574575447195!3d35.10160685434952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198560c9a19631%3A0xbf920c213489c8a5!2z5qiq5rWc5a6257O744Op44O844Oh44OzIOayvOa0pemtguW_g-Wutg!5e0!3m2!1sja!2sjp!4v1633542589286!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>～徒歩10分</h4>
+        <hr style="color: #404040">
+        <h5>らーめん銕-くろがね-</h5>
+        <p>
+            普通の醤油系ラーメンのようです。<br />
+            ご飯/佃煮/漬物セルフってレビューありますね...。<br />
+            仲見世商店街を駅ビル方面からまっすぐ歩くと右側に見えます。
+        </p>
+        <a href="http://maps.apple.com/?q=らーめん銕">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d647.7039488727802!2d138.85769301492473!3d35.10113767567482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198fd4b569c875%3A0x42a309c6b9fd3084!2z44KJ44O844KB44KT6YqVLeOBj-OCjeOBjOOBrS0!5e0!3m2!1sja!2sjp!4v1633542933984!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southCoffee">喫茶店</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩5分</h4>
+        <hr style="color: #404040">
+        <h5>葉山珈琲 沼津駅前店</h5>
+        <p>
+            駅南口を出て左側にあるローソンを直進。<br />
+            大通りに出たら車線をはさんで左側に見えます。
+        </p>
+        <p>
+            <a href="http://www.hayama-coffee.co.jp/menu.html" target="_blank"
+                rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=葉山珈琲+沼津駅前店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.8191216142781!2d138.86035017938082!3d35.10167096705869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e11df11c1%3A0x328ec245e4315ab7!2z6JGJ5bGx54-I55CyIOayvOa0pemnheWJjeW6lw!5e0!3m2!1sja!2sjp!4v1633543237391!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h4>～徒歩10分</h4>
+        <hr style="color: #404040">
+        <h5>どんぐり 沼津店</h5>
+        <p>
+            テレビで紹介されたお店。<br />
+            ちょこっと向かいの大人のゲーセン()で遊んだ時にお店の様子を窺ったら<br />
+            6~8人ぐらい並んでました。
+        </p>
+        <a href="http://maps.apple.com/?q=どんぐり+沼津">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d353.16259948823586!2d138.85794234076033!3d35.10125082062844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198560dad372f5%3A0xb28cc47ec2981eb5!2z55SY5ZGz5YemIOOBqeOCk-OBkOOCig!5e0!3m2!1sja!2sjp!4v1633543516405!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>やば珈琲店 沼津店</h5>
+        <p>
+            仲見世商店街を駅ビル方面からまっすぐ歩くと右側に見えます。<br />
+            飲食スペースは広め。
+        </p>
+        <p>
+            <a href="https://central-hld.jp/yaba-coffee/" target="_blank" rel="noopener noreferrer">メニューを開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=やば珈琲+沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288.5191099639408!2d138.8581177973055!3d35.101196127613065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60198560c44d021b%3A0x865b6b49b3a64e54!2z44KE44Gw54-I55Cy5bqXIOayvOa0peW6lw!5e0!3m2!1sja!2sjp!4v1633543384907!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h3 id="southKaraoke">カラオケ</h3>
+        <hr style="color: #404040">
+        <h4>～徒歩5分</h4>
+        <hr style="color: #404040">
+        <h5>まねきねこ 沼津南口店</h5>
+        <p>
+            南口から一番近いカラオケ屋。<br /> ローソンがあるビルにあります。
+        </p>
+        <p>
+            <a href="https://shop.karaokemanekineko.jp/store/151" target="_blank"
+                rel="noopener noreferrer">料金表を開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=まねきねこ+沼津南口店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1295.4005155360228!2d138.85880902261795!3d35.10159886858171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e1005d7b3%3A0x3a4e1d5c3baa14a8!2z44Kr44Op44Kq44Kx44G-44Gt44GN44Gt44GT5rK85rSl5Y2X5Y-j5bqX!5e0!3m2!1sja!2sjp!4v1633191009451!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>JOYSOUND 沼津店</h5>
+        <p>
+            南口のバスロータリーをまっすぐ進んだところにある<br /> ラブライブのお店の隣のビル4階にあります。<br />
+        </p>
+        <p>
+            <a href="https://shop.joysound.com/shop/joysound-numadu/#tab-price" target="_blank"
+                rel="noopener noreferrer">料金表を開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=JOYSOUND沼津店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.107612176331!2d138.8586411282628!3d35.101336291495286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e1ce32fad%3A0xcf624f7c481cd2d8!2z44Kr44Op44Kq44KxIEpPWVNPVU5E5rK85rSl5bqX77yI44K444On44Kk44K144Km44Oz44OJ77yJ!5e0!3m2!1sja!2sjp!4v1633191350165!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>CLUB DAM Resort 沼津ラクーン店</h5>
+        <p>
+            南口のバスロータリーをまっすぐ進んだところにある<br /> パチンコ屋が入ってるビルの5階にあります。<br />
+        </p>
+        <p>
+            <a href="https://karaokeclub.jp/shop/%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1%EF%BD%83%EF%BD%8C%EF%BD%95%EF%BD%82-%EF%BD%84%EF%BD%81%EF%BD%8D-resort%E6%B2%BC%E6%B4%A5%E3%83%A9%E3%82%AF%E3%83%BC%E3%83%B3%E5%BA%97/"
+                target="_blank" rel="noopener noreferrer">料金表を開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=CLUB+DAM+Resort+沼津ラクーン店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.107612176331!2d138.8586411282628!3d35.101336291495286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019855e1ce32fad%3A0xcf624f7c481cd2d8!2z44Kr44Op44Kq44KxIEpPWVNPVU5E5rK85rSl5bqX77yI44K444On44Kk44K144Km44Oz44OJ77yJ!5e0!3m2!1sja!2sjp!4v1633191350165!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+        <h5>BanBan 沼津駅前店</h5>
+        <p>
+            南口を出て左側にある駅ビル方面を進んだ先に見えるanimateのビル3階にあります。<br />
+        </p>
+        <p>
+            <a href="http://karaoke-shin.jp/shop-list/670.html" target="_blank"
+                rel="noopener noreferrer">料金表を開く(別サイト遷移)</a>
+        </p>
+        <a href="http://maps.apple.com/?q=BanBan沼津駅前店">マップアプリで開く</a>
+        <br />
+        <br />
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.05196982004!2d138.85812377944623!3d35.10151972488305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x70c8279523aa69d!2z44Kr44Op44Kq44KxQmFuQmFu5rK85rSl6aeF5YmN5bqX!5e0!3m2!1sja!2sjp!4v1633191924780!5m2!1sja!2sjp"
+                width="690" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br />
+        <br />
+    </div>
+    <div id="pageTop">
+        <a href="#" class="scrollOption"></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        jQuery(function () {
+
+            const darkmode = new Darkmode();
+
+            // variable
+            var pagetop = $('#pageTop');
+            var scrollOption = $('.scrollOption');
+            var toggleButton = $('#modeToggleButton');
+
+            pagetop.hide();
+
+            // button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 150) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+
+            // scroll
+            scrollOption.click(function () {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'body,html' : href);
+                var position = target.offset().top;
+                $('html,body').animate({
+                    scrollTop: position
+                }, 350);
+                return false;
+            });
+
+            toggleButton.click(function () {
+                var innerToggleButton = document.getElementById('modeToggleButton');
+                var hrElems = document.getElementsByTagName("hr");
+                darkmode.toggle();
+
+                if (darkmode.isActivated()) {
+                    innerToggleButton.innerText = "ライトモードに変更する";
+                    innerToggleButton.className = "btn btn-light";
+                    Array.prototype.forEach.call(hrElems, function (element) {
+                        element.style.color = "#ffffff"
+                    });
+                } else {
+                    innerToggleButton.innerText = "ダークモードに変更する";
+                    innerToggleButton.className = "btn btn-dark";
+                    Array.prototype.forEach.call(hrElems, function (element) {
+                        element.style.color = "#404040"
+                    });
+                }
+            })
+
+        });
+    </script>
+</body>
+
+</html>
